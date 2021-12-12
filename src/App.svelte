@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Octet from './components/Octet.svelte';
 
 	let cidr = 	{
