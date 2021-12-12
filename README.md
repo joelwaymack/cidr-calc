@@ -1,80 +1,28 @@
-# SvelteBasic
+# CIDR Calculator
 
+This app helps calculate CIDR blocks. Feel free to add feature requests or contribute to the project.
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [Svelte](https://https://svelte.dev/) apps in minutes. Use this repo to build and customize a new static site.
+[Deployed CIDR Calculator at https://cidrcalc.xyz](https://cidrcalc.xyz)
 
-## Get started
+## Feature suggestions and bugs
 
-Install the dependencies...
+Please feel free to add [issues](https://github.com/joelwaymack/cidr-calc/issues) to this repository to make it better. Please add appropriate labels to new issues to ensure we track them correctly.
 
-```bash
-cd svelte-app
-npm install
-```
+## Contributing
 
-...then start [Rollup](https://rollupjs.org):
+Pull requests are welcome! This app is built using [Svelte](https://svelte.dev/) and hosted using [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/).
 
-```bash
-npm run dev
-```
+### Get started
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+1. Clone the repo.
+2. npm install
+3. npm start
+4. Navigate to [localhost:5000](http://localhost:5000)
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+### Deployments
 
+This site is deployed whenever a pull request is merged into the main branch. Each pull request also generates a deployed, test version of this app to confirm changes work correctly.
 
-## Building and running in production mode
+## Notes
 
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now deploy --name my-project
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+Inspiration originally came from [https://cidr.xyz/](https://cidr.xyz/).
