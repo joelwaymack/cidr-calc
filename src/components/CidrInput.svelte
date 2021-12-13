@@ -20,13 +20,13 @@
 
 <div class="cidr-input">
 	{#each cidr.octets as o, octet}
-		<input type="number" name={octet.toString()} bind:value={cidr.octets[octet]} on:input={inputChange} />
+		<input type="number" name={octet.toString()} bind:value={cidr.octets[octet]} on:input|capture={inputChange} />
 		{#if octet != cidr.octets.length - 1}
 			<div>.</div>
 		{/if}
 	{/each}
 	<div>/</div>
-	<input type="number" name="mask" bind:value={cidr.mask} on:input={inputChange} />
+	<input type="number" name="mask" bind:value={cidr.mask} on:input|capture={inputChange} />
 </div>
 
 <style type="text/scss">
