@@ -1,6 +1,6 @@
 <script lang="ts">
 	import BinaryBlock from './components/BinaryBlock.svelte';
-import CidrDetails from './components/CidrDetails.svelte';
+	import CidrDetails from './components/CidrDetails.svelte';
 	import CidrInput from './components/CidrInput.svelte';
 	import Footer from './components/Footer.svelte';
 	import Header from './components/Header.svelte';

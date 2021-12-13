@@ -6,7 +6,7 @@
 	const inputChange = (event) => {
 		const target = event.target.name;
 		let value = event.target.valueAsNumber;
-		value = !value || value < 0 ? 0 : value;
+		value = !value || value === NaN || value < 0 ? 0 : value;
 
 		if (target === 'mask') {
 			value = value > 32 ? 32 : value;
@@ -29,7 +29,7 @@
 	<input type="number" name="mask" bind:value={cidr.mask} on:input={inputChange} />
 </div>
 
-<style>
+<style type="text/scss">
 	input {
 		width: 3rem;
 		text-align: center;
