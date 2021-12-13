@@ -16,21 +16,25 @@
 </script>
 
 <ol>
-    {#each binary as bit}
-        <li>{bit}</li>
+    {#each binary as bit, index}
+        <li class:masked={cidr.mask - (octet * 8) - index <= 0}>{bit}</li>
     {/each}
 </ol>
 
 <style type="text/scss">
     ol {
         padding-inline-start: 0;
-        font-size: 6px;
+        font-size: 12px;
 
         li {
             display: inline;
             border: 1px black solid;
             list-style-type: none;
-            padding: 0.4em 0.6em;
+            padding: 0.2em 0.3em;
+
+            &.masked {
+                background-color: lightgray;
+            }
         }
     }
 </style>

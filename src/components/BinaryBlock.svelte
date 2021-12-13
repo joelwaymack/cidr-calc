@@ -14,7 +14,7 @@
     {/each}
 </div>
 
-<style>
+<style type="text/scss">
 	.binary-block {
 		display: flex;
 		flex-wrap: wrap;
